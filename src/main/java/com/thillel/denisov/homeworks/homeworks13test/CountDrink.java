@@ -1,4 +1,4 @@
-package com.thillel.denisov.homeworks.homeworks13;
+package com.thillel.denisov.homeworks.homeworks13test;
 
 public class CountDrink {
     public static int count = 0;

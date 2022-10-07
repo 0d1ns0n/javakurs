@@ -1,4 +1,6 @@
-package com.thillel.denisov.homeworks.homeworks13;
+package com.thillel.denisov.homeworks.homeworks13test;
+
+import com.thillel.denisov.homeworks.homeworks13.DrinksMachine;
 
 public class DrinkMaker {
     public static void makeDrink(DrinksMachine drinksMachine){
