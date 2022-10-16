@@ -14,7 +14,7 @@ public class FolowingSeries {
                 if (0 <= a && 0 <= b && a <= 50 && b <= 50) {
                     if (1 <= n && n <= 15) {
                         for (int j = 0; j < n; j++) {
-                            a += Math.pow(2,j) * b;                 // nice
+                            a += Math.pow(2, j) * b;                 // nice
                             System.out.print(a + " ");              //
 //                            int result;                           // bad!
 //                            result = a + (int)Math.pow(2,j) * b;  //
@@ -28,7 +28,8 @@ public class FolowingSeries {
                         }
                     }
                 }
-            }System.out.println();
+            }
+            System.out.println();
         }
         in.close();
     }
