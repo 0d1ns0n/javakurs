@@ -47,39 +47,39 @@ public class DrinksAutomat extends DrinksPrice {
     static void ScannerChoice(DrinksMachine drinksMachineEnum, Scanner scanner, final double price) {
         DrinksPrice drinksPrice = new DrinksPrice();
         System.out.println("You choice " + drinksMachineEnum.getTitle() + ", maybe something else? ");
-        switch ((Choice(scanner, "1 - Yes i do or 2 - No, you will receive a check"))) {
-            case 1:
-                switch (CheckNum(scanner, "Duet your choice 1 - Coffee 2 - Tea 3 - Lemonade 4 - Mojito 5 - Mineral Water 6 - Coca Cola ")) {
-                    case 1 -> {
-                        System.out.println("You choice " + drinksMachineEnum.getTitle() + " and " + DrinksMachine.COFFEE.getTitle());
-                        System.out.println("Price " + (price + drinksPrice.Coffee) + "$");
-                    }
-                    case 2 -> {
-                        System.out.println("You choice " + drinksMachineEnum.getTitle() + " and " + DrinksMachine.TEA.getTitle() + ", no more than two drinks! ");
-                        System.out.println("Price " + (price + drinksPrice.Tea) + "$");
-                    }
-                    case 3 -> {
-                        System.out.println("You choice " + drinksMachineEnum.getTitle() + " and " + DrinksMachine.LEMONADE.getTitle() + ", no more than two drinks! ");
-                        System.out.println("Price " + (price + drinksPrice.lemonade) + "$");
-                    }
-                    case 4 -> {
-                        System.out.println("You choice " + drinksMachineEnum.getTitle() + " and " + DrinksMachine.MOJITO.getTitle() + ", no more than two drinks! ");
-                        System.out.println("Price " + (price + drinksPrice.Mojito) + "$");
-                    }
-                    case 5 -> {
-                        System.out.println("You choice " + drinksMachineEnum.getTitle() + " and " + DrinksMachine.MINERALWATER.getTitle() + ", no more than two drinks! ");
-                        System.out.println("Price " + (price + drinksPrice.MineralWater) + "$");
-                    }
-                    case 6 -> {
-                        System.out.println("You choice " + drinksMachineEnum.getTitle() + " and " + DrinksMachine.COCACOLA.getTitle() + ", no more than two drinks! ");
-                        System.out.println("Price " + (price + price) + "$");
-                    }
-                }
-                break;
-            case 2:
-                System.out.println("Price " + price + "$");
-                break;
-        }
+//        switch ((Choice(scanner, "1 - Yes i do or 2 - No, you will receive a check"))) {
+//            case 1:
+//                switch (CheckNum(scanner, "Duet your choice 1 - Coffee 2 - Tea 3 - Lemonade 4 - Mojito 5 - Mineral Water 6 - Coca Cola ")) {
+//                    case 1 -> {
+//                        System.out.println("You choice " + drinksMachineEnum.getTitle() + " and " + DrinksMachine.COFFEE.getTitle());
+//                        System.out.println("Price " + (price + drinksPrice.Coffee) + "$");
+//                    }
+//                    case 2 -> {
+//                        System.out.println("You choice " + drinksMachineEnum.getTitle() + " and " + DrinksMachine.TEA.getTitle() + ", no more than two drinks! ");
+//                        System.out.println("Price " + (price + drinksPrice.Tea) + "$");
+//                    }
+//                    case 3 -> {
+//                        System.out.println("You choice " + drinksMachineEnum.getTitle() + " and " + DrinksMachine.LEMONADE.getTitle() + ", no more than two drinks! ");
+//                        System.out.println("Price " + (price + drinksPrice.lemonade) + "$");
+//                    }
+//                    case 4 -> {
+//                        System.out.println("You choice " + drinksMachineEnum.getTitle() + " and " + DrinksMachine.MOJITO.getTitle() + ", no more than two drinks! ");
+//                        System.out.println("Price " + (price + drinksPrice.Mojito) + "$");
+//                    }
+//                    case 5 -> {
+//                        System.out.println("You choice " + drinksMachineEnum.getTitle() + " and " + DrinksMachine.MINERALWATER.getTitle() + ", no more than two drinks! ");
+//                        System.out.println("Price " + (price + drinksPrice.MineralWater) + "$");
+//                    }
+//                    case 6 -> {
+//                        System.out.println("You choice " + drinksMachineEnum.getTitle() + " and " + DrinksMachine.COCACOLA.getTitle() + ", no more than two drinks! ");
+//                        System.out.println("Price " + (price + price) + "$");
+//                    }
+//                }
+//                break;
+//            case 2:
+//                System.out.println("Price " + price + "$");
+//                break;
+//        }
 
     }
     static int reuse(Scanner scanner, String text){
@@ -102,14 +102,14 @@ public class DrinksAutomat extends DrinksPrice {
             int i = CheckNum(scanner, "Duet your choice 1 - Coffee 2 - Tea 3 - Lemonade 4 - Mojito 5 - Mineral Water 6 - Coca Cola ");
             if (i > 0 && i < 7) {
 
-                switch (i) {
-                    case 1 -> ScannerChoice(DrinksMachine.COFFEE, scanner, drinksPrice.Coffee);
-                    case 2 -> ScannerChoice(DrinksMachine.TEA, scanner, drinksPrice.Tea);
-                    case 3 -> ScannerChoice(DrinksMachine.LEMONADE, scanner, drinksPrice.lemonade);
-                    case 4 -> ScannerChoice(DrinksMachine.MOJITO, scanner, drinksPrice.Mojito);
-                    case 5 -> ScannerChoice(DrinksMachine.MINERALWATER, scanner, drinksPrice.MineralWater);
-                    case 6 -> ScannerChoice(DrinksMachine.COCACOLA, scanner, drinksPrice.CocaCola);
-                }break;
+//                switch (i) {
+////                    case 1 -> ScannerChoice(DrinksMachine.COFFEE, scanner, drinksPrice.Coffee);
+//                    case 2 -> ScannerChoice(DrinksMachine.TEA, scanner, drinksPrice.Tea);
+//                    case 3 -> ScannerChoice(DrinksMachine.LEMONADE, scanner, drinksPrice.lemonade);
+//                    case 4 -> ScannerChoice(DrinksMachine.MOJITO, scanner, drinksPrice.Mojito);
+//                    case 5 -> ScannerChoice(DrinksMachine.MINERALWATER, scanner, drinksPrice.MineralWater);
+//                    case 6 -> ScannerChoice(DrinksMachine.COCACOLA, scanner, drinksPrice.CocaCola);
+//                }break;
             } else {
                 System.out.println("Wrong");
             }
